@@ -42,6 +42,7 @@
                     <option class="bg-blue-400" selected value="3">3</option>
                     <option class="bg-green-400" value="5">5</option>
                     <option class="bg-red-400" value="100">100</option>
+                    <option class="bg-teal-400" value="all">All</option>
                 </select>
 
                 <select wire:model="option"
