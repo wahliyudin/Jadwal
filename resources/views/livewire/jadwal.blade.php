@@ -41,7 +41,7 @@
                     class="border border-blue-400 outline-none py-1 px-5 rounded-md focus:shadow-outline-teal">
                     <option class="bg-blue-400" selected value="3">3</option>
                     <option class="bg-green-400" value="5">5</option>
-                    <option class="bg-red-400" value="10">10</option>
+                    <option class="bg-red-400" value="100">100</option>
                 </select>
 
                 <select wire:model="option"
@@ -64,7 +64,7 @@
                 </div>
             </div>
         </div>
-        <table class="shadow-md table-auto w-full rounded-md bg-gray-400  border border-cool-gray-600">
+        <table class="shadow-md table-auto w-full rounded-md bg-gray-400 border border-cool-gray-600 mb-5">
             <thead>
                 <tr class="animate-bounce">
                     <th class="bg-blue-300 w-1/2 py-3 border border-cool-gray-600 rounded-md">Jadwal Tugas</th>
@@ -126,5 +126,7 @@
                 @endforeach
             </tbody>
         </table>
+        {{ $jadwal->links() }}
+
     </div>
 </section>
