@@ -1,0 +1,91 @@
+.hero-item .hero-content span,
+.hero-item .hero-content h1,
+.hero-item .hero-content button {
+    transform: translateY(50px);
+    transition: all 0.8s;
+    transition-delay: 1s;
+    opacity: 0;
+}
+#hero .lslide.active .hero-content span,
+#hero .lslide.active .hero-content h1,
+#hero .lslide.active .hero-content button{
+    transform: translateY(0);
+    opacity: 1;
+}
+#hero .lslide.active .hero-content h1 {
+    transition-delay: 1.3s;
+}
+#hero .lslide.active .hero-content button {
+    transition-delay: 1.6s;
+}
+.hero .lSAction .lSPrev,
+.hero .lSAction .lSNext {
+    height: 50px;
+    width: 50px;
+    background-color: #070a57 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 30px;
+    transition: all 0.3s;
+    opacity: 0;
+}
+.hero .lSAction .lSPrev{
+    left: 40px;
+    transform: translateX(50px);
+}
+.hero .lSAction .lSNext{
+    right: 50px;
+    transform: translateX(-50px);
+}
+.hero:hover .lSAction .lSPrev,
+.hero:hover .lSAction .lSNext{
+    transform: translateX(0);
+    opacity: 1;
+}
+.background-image {
+    background-image: url('../../images/');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 600px;
+}
+#products-popular .product-item .normal-img{
+    opacity: 1;
+    transition: all 0.5s;
+}
+#products-popular .product-item .hover-img {
+    transform: translateY(-30px);
+    transition: all 0.5s;
+    opacity: 0;
+}
+#products-popular .product-item:hover .normal-img {
+    opacity: 0;
+}
+#products-popular .product-item .hover-img:hover {
+    transform: translateY(0);
+    opacity: 1;
+}
+#products-popular .product-item .btn-cart{
+    transform: translateY(20px);
+    transition: all 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+#products-popular .product-item:hover .btn-cart{
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+#products-popular .product-item .btn-heart{
+    transform: translateX(100%);
+    transition: all 0.3s;
+    opacity: 0;
+}
+#products-popular .product-item:hover .btn-heart{
+    transform: translateX(0);
+    opacity: 1;
+}
